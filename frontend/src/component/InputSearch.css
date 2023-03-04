@@ -1,0 +1,36 @@
+.inputSearch{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+.inputForm{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.searchButton{
+    background: pink;
+    border-radius: 20% ;
+    border-style: solid;
+    border-color: blueviolet;
+}
+
+.searchButton:hover{
+    cursor: pointer;
+    border-color: lightgrey;
+}
+h2{
+    margin-top: 10vh;
+    text-transform: capitalize;
+}
+.resetButton{
+
+    margin: 10px 5px;
+    background: white;
+    border-radius: 20% ;
+    border-style: solid;
+    border-color: darkgrey;
+    max-width: 5vw;
+
+}

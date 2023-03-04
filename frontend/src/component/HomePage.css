@@ -1,0 +1,5 @@
+.homePage{
+    margin-left: 30vw;
+    display: flex;
+    flex-direction: column;
+}

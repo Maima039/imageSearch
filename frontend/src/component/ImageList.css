@@ -1,0 +1,35 @@
+.imageContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all ease-in-out 0.3s;
+
+}
+
+.imageList{
+    margin: 0 5px;
+    width: 130px;
+    height: 95px;
+    border-radius: 10px;
+    background-size: cover;
+    border: 1px solid rgba(200, 200, 200, 0.3);
+    transition: ease-in-out 0.3s;
+    opacity: 0.8;
+}
+
+.imageList:hover{
+    cursor: pointer;
+}
+
+.imagePage{
+    display: flex;
+    flex-direction: column;
+    margin: 20vh 30vw;
+}
+
