@@ -2,7 +2,6 @@
 import {AnimatePresence} from 'framer-motion'
 import {HomePage} from "./component/HomePage";
 import {Navigate, Route, Routes, useLocation} from "react-router";
-import {useSelector} from "react-redux";
 import {useMemo} from "react";
 import {ImagePage} from "./component/ImagePage";
 

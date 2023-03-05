@@ -1,4 +1,12 @@
-   orientation: 'landscape'
+import axios from "axios";
+import {BasicUrl, AccessKey} from "../helper";
+import {actionType} from "../helper";
+
+const fetchImage =(param)=>async dispatch=>{
+    axios.get(BasicUrl,{
+        params:{
+            query: param,
+            orientation: 'landscape'
         },
         headers: {
             Authorization: `Client-ID ${AccessKey}`

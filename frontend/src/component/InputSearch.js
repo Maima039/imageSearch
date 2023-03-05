@@ -8,7 +8,7 @@ export const InputSearch =()=>{
     let dispatch = useDispatch()
 
     // empty database after refresh
-    useEffect(()=>{dispatch(actions.fetchAction.clearDatabase)},[])
+    // useEffect(()=>{dispatch(actions.fetchAction.clearDatabase)},[])
 
     const cbInput = e=>{
         dispatch(actions.fetchAction.fetchImage(param))

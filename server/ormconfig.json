@@ -1,0 +1,26 @@
+{
+   "type": "sqlite",
+   "database": "databasePractice.sqlite",
+   "synchronize": true,
+   "logging": false,
+
+   "[__for typeORM seeding": null,
+   "seeds": ["src/db/seeds/**/*{.ts,.js}"],
+   "factories": ["src/db/factories/**/*{.ts,.js}"],
+   "__for] typeORM seeding":  null,
+
+   "entities": [
+      "src/entity/**/*.ts"
+   ],
+   "migrations": [
+      "src/migration/**/*.ts"
+   ],
+   "subscribers": [
+      "src/subscriber/**/*.ts"
+   ],
+   "cli": {
+      "entitiesDir": "src/entity",
+      "migrationsDir": "src/migration",
+      "subscribersDir": "src/subscriber"
+   }
+}

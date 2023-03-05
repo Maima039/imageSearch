@@ -1,4 +1,4 @@
-import {AnimatedRoutes} from "./AnimatedRoutes";
+import {AnimatedRoutes} from "./AnimatedRouter";
 
 
 function App(){
