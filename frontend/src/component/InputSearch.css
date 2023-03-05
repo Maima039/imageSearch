@@ -25,12 +25,14 @@ h2{
     text-transform: capitalize;
 }
 .resetButton{
-
     margin: 10px 5px;
     background: white;
     border-radius: 20% ;
     border-style: solid;
     border-color: darkgrey;
     max-width: 5vw;
+}
 
+.resetButton:hover{
+    cursor: pointer;
 }

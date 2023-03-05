@@ -2,8 +2,8 @@ import axios from "axios";
 import {BasicUrl, AccessKey} from "../helper";
 import {actionType} from "../helper";
 
-const fetchImage =(param)=>async dispatch=>{
-    axios.get(BasicUrl,{
+const fetchImage = (param) =>async dispatch=>{
+    await axios.get(BasicUrl,{
         params:{
             query: param,
             orientation: 'landscape'
@@ -13,11 +13,10 @@ const fetchImage =(param)=>async dispatch=>{
         }
     })
         .then(res => {
-            // console.log(res)
             let {data:{results}} = res
             let imageList = results.map(item=>({
                 des:item.alt_description,
-                thumb: item.urls.thumb
+                thumb: item.urls.thumb,
             }))
             dispatch({
                 type: actionType.FETCH_IMAGE,
@@ -28,11 +27,11 @@ const fetchImage =(param)=>async dispatch=>{
                 payload: param
             })
         })
-        .catch(e => console.log(e))
+        .catch(e => {})
 }
 
 
-const saveImage =  (list) => async dispatch=>{
+const saveImage = (list) => async dispatch=>{
     list?.forEach( (img,index)=>{
         axios.post(`http://localhost:3000/image`,{
             index:index,

@@ -5,8 +5,6 @@ import './HomePage.css'
 
 export const HomePage=()=>{
     document.title = "Home Page"
-
-
     return(
         <motion.div>
         <div className="homePage">

@@ -14,7 +14,7 @@ export const ImagePage = () => {
 
     return (<>
             <div className="imagePage">
-            <h2>{index}.{imageDetail?.des}</h2>
+            <h2>{index}.{imageDetail?.des ? imageDetail?.des : 'No description'}</h2>
             <div className="imageList" style ={{background:`url('${imageDetail?.thumb}') no-repeat center ` }}>
             </div>
     </div>

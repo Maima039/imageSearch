@@ -1,4 +1,3 @@
-
 import {AnimatePresence} from 'framer-motion'
 import {HomePage} from "./component/HomePage";
 import {Navigate, Route, Routes, useLocation} from "react-router";

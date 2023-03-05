@@ -13,7 +13,7 @@ export const ImageList=()=>{
 
     return(
         <div className="imageContainer">
-            {list&& list.map((img,index)=><div className="imageList" key ={index}
+            {list && list.map((img,index)=><div className="imageList" key ={index}
             style ={{background:`url('${img?.thumb}') no-repeat center center/cover fixed`}}
             onClick={()=>{
                 navigate(`/image/${index}`)
